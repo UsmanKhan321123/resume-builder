@@ -1,0 +1,222 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .button-28:hover{
+            background-color: rgb(32, 32, 236);
+
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+    <form action="">
+        <fieldset class="fieldsets" >
+            <legend>
+                <h2>Personal Information</h2>
+            </legend>
+    
+            
+            <label for="fname" class="labels">Full Name </label>
+            <input type="text" name="name" id="fname" placeholder="Your fullname" class="inputs">
+            
+            <label for="gender"  class="labels">Gender</label>
+            <input type="text" name="" id="gender" placeholder="Your Gender" class="inputs">
+            
+            <!-- <label for="title" class="labels">Title </label>
+            <input type="text" name="title" id="title" placeholder="Your Title i.e Web Developer" class="inputs">
+             -->
+            <!-- <label for="age"  class="labels">Age</label>
+            <input type="number" name="" id="age" placeholder="Your Age" class="inputs">
+            
+            <label for="phone"  class="labels">Contact </label>
+            <input type="number" name="phone" id="phone" maxlength="11" placeholder="Your Contact Number" class="inputs">
+            
+            <label for="email"  class="labels">E-mail </label>
+            <input type="email" name="email" id="email" placeholder="Your Email" class="inputs">
+            
+            <label for="address"  class="labels">Address </label>
+            <input type="text" name="address" id="address" placeholder="Your residential address" class="inputs">
+            
+            <label for="picture"  class="labels">Upload your picture</label>
+            <input type="file" name="picture" id="picture" >
+     
+        </fieldset>
+        <fieldset class="fieldsets">
+
+            <legend>
+                <h2>Education</h2>
+            </legend>
+            <label for="education"  class="labels">Qualification</label>
+            <input type="text" name="Qualification" id="education" placeholder="Your last Degree e.g BS in Computer Science " class="inputs"></div>
+
+            
+            <label for="institute"  class="labels">Institute </label>
+            <input type="text" name="institute" id="institute" placeholder="Your institute" class="inputs"></div>
+            
+            <label for="passing-year"  class="labels">Passing-year </label>
+            <input type="number" name="passing-year" id="passing-year" placeholder="Your passing-year" class="inputs"></div>
+            
+            <label for="grade"  class="labels">Grade/GPA</label>
+            <input type="text" id="grade" placeholder="Your obtained Grade / GPA" class="inputs">
+
+        </fieldset>
+        <fieldset id="skl" class="fieldsets">
+           
+                <legend> <h2>Skills</h2></legend>
+            
+            <label for="skills"  class="labels">Skills</label>
+            <input type="text" id="skills" placeholder="Your skills " class="inputs">
+        
+        </fieldset>
+        <fieldset class="fieldsets">
+           
+            <legend> <h2>Experience</h2></legend>
+            <label for="experience"  class="labels">Work Experience</label>
+            <textarea id="experience" rows="5" cols=" 100" placeholder="Add you Work Experience here" class="inputs"></textarea>
+    </fieldset>
+
+
+
+    </form>
+    <script src="app.js"></script>
+</main>
+<button type="submit" >
+<a class="button-28" role="button" href="./resume.html" style="display: flex; justify-content: center; align-items: center; position: relative;top: 50%;margin: 0 auto;margin-top: 50px;border-color:rgb(32, 32, 236);">Generate Resume</a>
+</button>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .button-28:hover {
+            background-color: rgb(32, 32, 236);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <form action="" id="resume-form">
+            <fieldset class="fieldsets">
+                <legend>
+                    <h2>Personal Information</h2>
+                </legend>
+
+                <label for="fname" class="labels">Full Name </label>
+                <input type="text" name="name" id="fname" placeholder="Your fullname" class="inputs">
+
+                <label for="gender" class="labels">Gender</label>
+                <input type="text" name="gender" id="gender" placeholder="Your Gender" class="inputs">
+
+                <label for="age" class="labels">Age</label>
+                <input type="number" name="age" id="age" placeholder="Your Age" class="inputs">
+
+                <label for="phone" class="labels">Contact </label>
+                <input type="number" name="phone" id="phone" maxlength="11" placeholder="Your Contact Number" class="inputs">
+
+                <label for="email" class="labels">E-mail </label>
+                <input type="email" name="email" id="email" placeholder="Your Email" class="inputs">
+
+                <label for="address" class="labels">Address </label>
+                <input type="text" name="address" id="address" placeholder="Your residential address" class="inputs">
+
+                <label for="picture" class="labels">Upload your picture</label>
+                <input type="file" name="picture" id="picture" class="inputs" accept="image/*">
+            </fieldset>
+
+            <fieldset class="fieldsets">
+                <legend>
+                    <h2>Education</h2>
+                </legend>
+                <label for="qualification" class="labels">Qualification</label>
+                <input type="text" name="Qualification" id="qualification" placeholder="Your last Degree e.g BS in Computer Science" class="inputs">
+        
+                <label for="institute" class="labels">Institute</label>
+                <input type="text" name="institute" id="institute" placeholder="Your institute" class="inputs">
+        
+                <label for="passing-year" class="labels">Passing Year</label>
+                <input type="number" name="passing-year" id="passing-year" placeholder="Your passing year" class="inputs">
+        
+                <label for="grade" class="labels">Grade/GPA</label>
+                <input type="text" id="grade" placeholder="Your obtained Grade / GPA" class="inputs">
+            </fieldset>
+
+            <fieldset id="skl" class="fieldsets">
+                <legend>
+                    <h2>Skills</h2>
+                </legend>
+                <label for="skills" class="labels">Skills</label>
+                <input type="text" name="skills" id="skills" placeholder="Your skills" class="inputs">
+            </fieldset>
+
+            <fieldset class="fieldsets">
+                <legend>
+                    <h2>Experience</h2>
+                </legend>
+                <label for="experience" class="labels">Work Experience</label>
+                <textarea name="experience" id="experience" rows="5" cols="100" placeholder="Add your Work Experience here" class="inputs"></textarea>
+            </fieldset>
+            <fieldset id="socialLinks" class="fieldsets">
+                <legend>
+                    <h2>Social Links</h2>
+                </legend>
+                <label for="github" class="labels">Github</label>
+                <input type="text" name="github" id="github" placeholder="Your GitHub profile Link" class="inputs">
+            
+                <label for="linkedin" class="labels">LinkedIn</label>
+                <input type="text" name="linkedin" id="linkedin" placeholder="Your LinkedIn profile Link" class="inputs">
+            </fieldset>
+            
+
+            <button type="submit" class="button-28" style="display: flex; justify-content: center; align-items: center; position: relative;top: 50%; margin: 0 auto; margin-top: 50px; border-color: rgb(32, 32, 236);">
+                Generate Resume
+            </button>
+        </form>
+    </main>
+    
+    <script src="app.js"></script>
+    <script>
+        // Get the file input element
+        const fileInput = document.getElementById('picture');
+
+        // Add an event listener for when the file is uploaded
+        fileInput.addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+
+                // When the file is successfully loaded
+                reader.onload = function(e) {
+                    const imageUrl = e.target.result;
+
+                    // Set the background image of the #rd1-1 div
+                    const backgroundElement = document.getElementById('rd1-1');
+                    backgroundElement.style.backgroundImage = `url(${imageUrl})`;
+                    backgroundElement.style.backgroundSize = 'cover'; // Ensure the image covers the whole area
+                    backgroundElement.style.backgroundPosition = 'center'; // Center the background image
+                    backgroundElement.style.height = '200px'; // Adjust the height as needed
+                };
+
+                // Read the image file
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+</body>
+
+</html>

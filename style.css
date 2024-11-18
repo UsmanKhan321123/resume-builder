@@ -1,0 +1,343 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* General Styles */
+body {
+    background-color: #fafafa; /* Slightly lighter background */
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+/* Form container styles */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    margin-top: 30px;
+}
+
+/* Fieldset styles */
+.fieldsets {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.fieldsets:hover {
+    background-color: #f9f9f9;
+}
+
+/* Input field styles */
+.inputs {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid #82aaff;
+    border-radius: 8px;
+    outline: none;
+    box-shadow: 0 2px 4px rgba(106, 160, 240, 0.5);
+}
+
+.inputs:focus {
+    background-color: #f1f1f1;
+    border-color: #58a0f2;
+}
+
+/* Label styles */
+.labels {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Button styles */
+.button-28 {
+    background-color: transparent;
+    border: 2px solid #fd3333;
+    border-radius: 25px;
+    color: #3b3b3b;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    padding: 14px 24px;
+    text-align: center;
+    text-decoration: none;
+    width: 200px;
+    margin: 30px 0;
+    display: inline-block;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+
+.button-28:hover {
+    color: #fff;
+    background-color: #fd3333;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.button-28:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.button-28:disabled {
+    pointer-events: none;
+}
+
+/* Resume Section */
+#resume-main {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: auto;
+    max-width: 900px;
+     background-color: rgb(59, 78, 248); 
+
+}
+
+#rd1 {
+    min-width: 30%;
+    min-height: 100%;
+    /* background-color: rgb(255, 0, 0); */
+    padding: 20px;
+}
+
+#rd2 {
+    min-width: 65%;
+    min-height: 100%;
+    background-color: #ebe1e1;
+    padding: 20px;
+}
+
+#rd1-1 {
+    width: 140px;
+    height: 140px;
+    border: 3px solid white;
+    border-radius: 50%;
+    background-color: #f7f7f7;
+    margin: 0 auto;
+    background-size: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#rd2-1 {
+    width: 100%;
+    margin: 20px 0;
+}
+
+#name, #title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: black;
+    
+}
+
+#title {
+    font-weight: 500;
+    color: #555;
+    margin-bottom:20px ;
+}
+
+.psi {
+    display: flex;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+    align-items: center;
+}
+
+.psi .pic {
+    font-size: 20px;
+    color: #0a66c2; /* LinkedIn blue */
+
+}
+
+.text {
+    margin-left: 10px;
+}
+
+#professional-summary-heading, #edu-heading, #skills-heading,#social-links-heading {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 20px;
+    color: black;
+}
+
+#professional-summary-description, #edu-description, #skills-description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+    padding: 0 10px;
+}
+
+
+
+#github, #linkedin {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#github .pic, #linkedin .pic {
+    font-size: 18px;
+    color: #0a66c2; /* LinkedIn blue */
+}
+
+#github .text, #linkedin .text {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Media Queries for different screen sizes */
+
+/* Tablet and smaller screens */
+@media (max-width: 768px) {
+    /* Main container flex layout */
+    #resume-main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Fieldsets */
+    .fieldsets {
+        padding: 15px;
+    }
+
+    /* Inputs width */
+    .inputs {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Resume sections */
+    #rd1, #rd2 {
+        width: 100%;
+        min-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #rd1-1 {
+        width: 100px;
+        height: 100px;
+    }
+
+    .psi {
+        font-size: 14px;
+    }
+
+    /* Button resizing */
+    .button-28 {
+        width: 80%;
+    }
+}
+
+/* Mobile devices and very small screens (i.e. phones) */
+@media (max-width: 480px) {
+    /* Form inputs and fieldsets */
+    .inputs {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .fieldsets {
+        padding: 10px;
+        width: 100%;
+    }
+
+    /* Resume main container */
+    #resume-main {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 10px;
+    }
+
+    #rd1, #rd2 {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    /* Profile picture */
+    #rd1-1 {
+        width: 90px;
+        height: 90px;
+    }
+
+    /* Font size adjustments for readability */
+    #name {
+        font-size: 22px;
+    }
+
+    #title {
+        font-size: 18px;
+    }
+
+    .psi {
+        font-size: 12px;
+    }
+
+    #profesional-summary, #edu-heading, #skills-heading {
+        font-size: 16px;
+    }
+
+    #professional-summary-description, #edu-description, #skills-description {
+        font-size: 12px;
+    }
+
+    .button-28 {
+        width: 70%;
+        padding: 12px 18px;
+    }
+
+    /* Social Links Adjustments */
+    #github .text, #linkedin .text {
+        font-size: 12px;
+    }
+}
+
+/* Large screens (Desktops and above) */
+@media (min-width: 1200px) {
+    #resume-main {
+        width: 70%;
+        max-width: 1000px;
+    }
+
+    #rd1 {
+        min-width: 25%;
+    }
+
+    #rd2 {
+        min-width: 70%;
+    }
+}
+@media print {
+    /* Add styles specific to PDF printing */
+    body {
+        font-family: Arial, sans-serif;
+        color: #000;
+        padding: 20px;
+    }
+    #resume-main {
+        width: 100%;
+        max-width: 800px;
+        margin: auto;
+    }
+}
